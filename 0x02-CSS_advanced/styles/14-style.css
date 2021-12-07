@@ -25,6 +25,7 @@
     --section-title-margin: 0;
     --section-title-color: var(--color-black);
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -81,7 +82,6 @@ a:active {
     text-transform: var(--section-tagline-transform);
     font-weight: var(--font-weight-bold);
 }
-
 
 h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-family-title);

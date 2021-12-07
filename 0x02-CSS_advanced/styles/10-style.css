@@ -19,6 +19,7 @@
     --line-height-big: 1.8;
     --section-header-align: center;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -45,7 +46,11 @@ a{
     text-align: var(--section-header-align);
 }
 
-.card-category .section-tagline {
+.card-category {
+    color: var(--color-primary);
+}
+
+.section-tagline {
     color: var(--color-primary);
 }
 

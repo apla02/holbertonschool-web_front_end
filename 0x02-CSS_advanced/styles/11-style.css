@@ -20,6 +20,7 @@
     --section-header-align: center;
     --section-tagline-transform: uppercase;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;

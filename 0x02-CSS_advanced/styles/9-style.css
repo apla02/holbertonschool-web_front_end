@@ -18,6 +18,7 @@
     --line-height-base: 1.5;
     --line-height-big: 1.8;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -40,7 +41,11 @@ a{
     display: none;
 }
 
-.card-category .section-tagline {
+.card-category {
+    color: var(--color-primary);
+}
+
+.section-tagline {
     color: var(--color-primary);
 }
 

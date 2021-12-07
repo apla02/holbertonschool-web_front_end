@@ -15,6 +15,7 @@
     --font-weight-regular: 400;
     --font-weight-bold: 700;
 }
+
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
@@ -35,7 +36,11 @@ a{
     display: none;
 }
 
-.card-category .section-tagline {
+.card-category {
+    color: var(--color-primary);
+}
+
+.section-tagline {
     color: var(--color-primary);
 }
 
