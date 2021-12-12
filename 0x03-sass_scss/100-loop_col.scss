@@ -1,0 +1,10 @@
+/*loop col*/
+
+@for $value from 1 through 4 {
+
+    $width: percentage(1/$value);
+  
+    .col-#{$value} {
+      width: $width;
+    }
+  }
