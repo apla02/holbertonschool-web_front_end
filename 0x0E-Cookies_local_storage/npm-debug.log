@@ -1,0 +1,409 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'i', '-D', 'webpack-cli' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData webpack-cli
+8 silly fetchNamedPackageData webpack-cli
+9 silly mapToRegistry name webpack-cli
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/webpack-cli
+13 verbose request uri https://registry.npmjs.org/webpack-cli
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 6:54:43 PM
+16 verbose request id b8ed50d6835c267f
+17 http request GET https://registry.npmjs.org/webpack-cli
+18 http 200 https://registry.npmjs.org/webpack-cli
+19 verbose headers { date: 'Sat, 29 Jan 2022 23:54:13 GMT',
+19 verbose headers   'content-type': 'application/json',
+19 verbose headers   'transfer-encoding': 'chunked',
+19 verbose headers   connection: 'keep-alive',
+19 verbose headers   'cf-ray': '6d56626c4da68dac-MIA',
+19 verbose headers   age: '60',
+19 verbose headers   'cache-control': 'public, max-age=300',
+19 verbose headers   etag: 'W/"565458bf40fa4afff581b9aa304fb119"',
+19 verbose headers   'last-modified': 'Mon, 24 Jan 2022 13:26:17 GMT',
+19 verbose headers   vary: 'accept-encoding, accept',
+19 verbose headers   'cf-cache-status': 'HIT',
+19 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+19 verbose headers   'x-amz-replication-status': 'COMPLETED',
+19 verbose headers   server: 'cloudflare',
+19 verbose headers   'content-encoding': 'gzip' }
+20 silly get cb [ 200,
+20 silly get   { date: 'Sat, 29 Jan 2022 23:54:13 GMT',
+20 silly get     'content-type': 'application/json',
+20 silly get     'transfer-encoding': 'chunked',
+20 silly get     connection: 'keep-alive',
+20 silly get     'cf-ray': '6d56626c4da68dac-MIA',
+20 silly get     age: '60',
+20 silly get     'cache-control': 'public, max-age=300',
+20 silly get     etag: 'W/"565458bf40fa4afff581b9aa304fb119"',
+20 silly get     'last-modified': 'Mon, 24 Jan 2022 13:26:17 GMT',
+20 silly get     vary: 'accept-encoding, accept',
+20 silly get     'cf-cache-status': 'HIT',
+20 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+20 silly get     'x-amz-replication-status': 'COMPLETED',
+20 silly get     server: 'cloudflare',
+20 silly get     'content-encoding': 'gzip' } ]
+21 verbose get saving webpack-cli to /home/laura/.npm/registry.npmjs.org/webpack-cli/.cache.json
+22 silly install normalizeTree
+23 silly loadCurrentTree Finishing
+24 silly loadIdealTree Starting
+25 silly install loadIdealTree
+26 silly cloneCurrentTree Starting
+27 silly install cloneCurrentTreeToIdealTree
+28 silly cloneCurrentTree Finishing
+29 silly loadShrinkwrap Starting
+30 silly install loadShrinkwrap
+31 silly loadShrinkwrap Finishing
+32 silly loadAllDepsIntoIdealTree Starting
+33 silly install loadAllDepsIntoIdealTree
+34 silly resolveWithNewModule webpack-cli@4.9.2 checking installable status
+35 silly cache add args [ 'webpack-cli', null ]
+36 verbose cache add spec webpack-cli
+37 silly cache add parsed spec Result {
+37 silly cache add   raw: 'webpack-cli',
+37 silly cache add   scope: null,
+37 silly cache add   name: 'webpack-cli',
+37 silly cache add   rawSpec: '',
+37 silly cache add   spec: 'latest',
+37 silly cache add   type: 'tag' }
+38 silly addNamed webpack-cli@latest
+39 verbose addNamed "latest" is being treated as a dist-tag for webpack-cli
+40 info addNameTag [ 'webpack-cli', 'latest' ]
+41 silly mapToRegistry name webpack-cli
+42 silly mapToRegistry using default registry
+43 silly mapToRegistry registry https://registry.npmjs.org/
+44 silly mapToRegistry uri https://registry.npmjs.org/webpack-cli
+45 verbose addNameTag registry:https://registry.npmjs.org/webpack-cli not in flight; fetching
+46 verbose get https://registry.npmjs.org/webpack-cli not expired, no request
+47 silly addNameTag next cb for webpack-cli with tag latest
+48 silly addNamed webpack-cli@4.9.2
+49 verbose addNamed "4.9.2" is a plain semver version for webpack-cli
+50 silly mapToRegistry name webpack-cli
+51 silly mapToRegistry using default registry
+52 silly mapToRegistry registry https://registry.npmjs.org/
+53 silly mapToRegistry uri https://registry.npmjs.org/webpack-cli
+54 verbose addRemoteTarball https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.9.2.tgz not in flight; adding
+55 verbose addRemoteTarball [ 'https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.9.2.tgz',
+55 verbose addRemoteTarball   '77c1adaea020c3f9e2db8aad8ea78d235c83659d' ]
+56 info retry fetch attempt 1 at 6:54:44 PM
+57 info attempt registry request try #1 at 6:54:44 PM
+58 http fetch GET https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.9.2.tgz
+59 http fetch 200 https://registry.npmjs.org/webpack-cli/-/webpack-cli-4.9.2.tgz
+60 silly fetchAndShaCheck shasum 77c1adaea020c3f9e2db8aad8ea78d235c83659d
+61 verbose addTmpTarball /tmp/npm-4469-4bef4b8d/registry.npmjs.org/webpack-cli/-/webpack-cli-4.9.2.tgz not in flight; adding
+62 verbose addTmpTarball already have metadata; skipping unpack for webpack-cli@4.9.2
+63 silly cache afterAdd webpack-cli@4.9.2
+64 verbose afterAdd /home/laura/.npm/webpack-cli/4.9.2/package/package.json not in flight; writing
+65 verbose afterAdd /home/laura/.npm/webpack-cli/4.9.2/package/package.json written
+66 silly fetchNamedPackageData @discoveryjs/json-ext
+67 silly mapToRegistry name @discoveryjs/json-ext
+68 silly mapToRegistry scope (from package name) @discoveryjs
+69 verbose mapToRegistry no registry URL found in name for scope @discoveryjs
+70 silly mapToRegistry using default registry
+71 silly mapToRegistry registry https://registry.npmjs.org/
+72 silly mapToRegistry uri https://registry.npmjs.org/@discoveryjs%2fjson-ext
+73 silly fetchNamedPackageData @webpack-cli/configtest
+74 silly mapToRegistry name @webpack-cli/configtest
+75 silly mapToRegistry scope (from package name) @webpack-cli
+76 verbose mapToRegistry no registry URL found in name for scope @webpack-cli
+77 silly mapToRegistry using default registry
+78 silly mapToRegistry registry https://registry.npmjs.org/
+79 silly mapToRegistry uri https://registry.npmjs.org/@webpack-cli%2fconfigtest
+80 silly fetchNamedPackageData @webpack-cli/info
+81 silly mapToRegistry name @webpack-cli/info
+82 silly mapToRegistry scope (from package name) @webpack-cli
+83 verbose mapToRegistry no registry URL found in name for scope @webpack-cli
+84 silly mapToRegistry using default registry
+85 silly mapToRegistry registry https://registry.npmjs.org/
+86 silly mapToRegistry uri https://registry.npmjs.org/@webpack-cli%2finfo
+87 silly fetchNamedPackageData @webpack-cli/serve
+88 silly mapToRegistry name @webpack-cli/serve
+89 silly mapToRegistry scope (from package name) @webpack-cli
+90 verbose mapToRegistry no registry URL found in name for scope @webpack-cli
+91 silly mapToRegistry using default registry
+92 silly mapToRegistry registry https://registry.npmjs.org/
+93 silly mapToRegistry uri https://registry.npmjs.org/@webpack-cli%2fserve
+94 silly fetchNamedPackageData colorette
+95 silly mapToRegistry name colorette
+96 silly mapToRegistry using default registry
+97 silly mapToRegistry registry https://registry.npmjs.org/
+98 silly mapToRegistry uri https://registry.npmjs.org/colorette
+99 silly fetchNamedPackageData commander
+100 silly mapToRegistry name commander
+101 silly mapToRegistry using default registry
+102 silly mapToRegistry registry https://registry.npmjs.org/
+103 silly mapToRegistry uri https://registry.npmjs.org/commander
+104 silly fetchNamedPackageData execa
+105 silly mapToRegistry name execa
+106 silly mapToRegistry using default registry
+107 silly mapToRegistry registry https://registry.npmjs.org/
+108 silly mapToRegistry uri https://registry.npmjs.org/execa
+109 silly fetchNamedPackageData fastest-levenshtein
+110 silly mapToRegistry name fastest-levenshtein
+111 silly mapToRegistry using default registry
+112 silly mapToRegistry registry https://registry.npmjs.org/
+113 silly mapToRegistry uri https://registry.npmjs.org/fastest-levenshtein
+114 silly fetchNamedPackageData import-local
+115 silly mapToRegistry name import-local
+116 silly mapToRegistry using default registry
+117 silly mapToRegistry registry https://registry.npmjs.org/
+118 silly mapToRegistry uri https://registry.npmjs.org/import-local
+119 silly fetchNamedPackageData interpret
+120 silly mapToRegistry name interpret
+121 silly mapToRegistry using default registry
+122 silly mapToRegistry registry https://registry.npmjs.org/
+123 silly mapToRegistry uri https://registry.npmjs.org/interpret
+124 silly fetchNamedPackageData rechoir
+125 silly mapToRegistry name rechoir
+126 silly mapToRegistry using default registry
+127 silly mapToRegistry registry https://registry.npmjs.org/
+128 silly mapToRegistry uri https://registry.npmjs.org/rechoir
+129 silly fetchNamedPackageData webpack-merge
+130 silly mapToRegistry name webpack-merge
+131 silly mapToRegistry using default registry
+132 silly mapToRegistry registry https://registry.npmjs.org/
+133 silly mapToRegistry uri https://registry.npmjs.org/webpack-merge
+134 verbose request uri https://registry.npmjs.org/@discoveryjs%2fjson-ext
+135 verbose request no auth needed
+136 info attempt registry request try #1 at 6:54:44 PM
+137 http request GET https://registry.npmjs.org/@discoveryjs%2fjson-ext
+138 verbose request uri https://registry.npmjs.org/@webpack-cli%2fconfigtest
+139 verbose request no auth needed
+140 info attempt registry request try #1 at 6:54:44 PM
+141 http request GET https://registry.npmjs.org/@webpack-cli%2fconfigtest
+142 verbose request uri https://registry.npmjs.org/@webpack-cli%2finfo
+143 verbose request no auth needed
+144 info attempt registry request try #1 at 6:54:44 PM
+145 http request GET https://registry.npmjs.org/@webpack-cli%2finfo
+146 verbose request uri https://registry.npmjs.org/@webpack-cli%2fserve
+147 verbose request no auth needed
+148 info attempt registry request try #1 at 6:54:44 PM
+149 http request GET https://registry.npmjs.org/@webpack-cli%2fserve
+150 verbose request uri https://registry.npmjs.org/commander
+151 verbose request no auth needed
+152 info attempt registry request try #1 at 6:54:44 PM
+153 http request GET https://registry.npmjs.org/commander
+154 verbose request uri https://registry.npmjs.org/execa
+155 verbose request no auth needed
+156 info attempt registry request try #1 at 6:54:44 PM
+157 http request GET https://registry.npmjs.org/execa
+158 verbose request uri https://registry.npmjs.org/fastest-levenshtein
+159 verbose request no auth needed
+160 info attempt registry request try #1 at 6:54:44 PM
+161 http request GET https://registry.npmjs.org/fastest-levenshtein
+162 verbose request uri https://registry.npmjs.org/import-local
+163 verbose request no auth needed
+164 info attempt registry request try #1 at 6:54:44 PM
+165 http request GET https://registry.npmjs.org/import-local
+166 verbose request uri https://registry.npmjs.org/interpret
+167 verbose request no auth needed
+168 info attempt registry request try #1 at 6:54:44 PM
+169 http request GET https://registry.npmjs.org/interpret
+170 verbose request uri https://registry.npmjs.org/rechoir
+171 verbose request no auth needed
+172 info attempt registry request try #1 at 6:54:44 PM
+173 http request GET https://registry.npmjs.org/rechoir
+174 verbose request uri https://registry.npmjs.org/webpack-merge
+175 verbose request no auth needed
+176 info attempt registry request try #1 at 6:54:44 PM
+177 http request GET https://registry.npmjs.org/webpack-merge
+178 verbose request uri https://registry.npmjs.org/colorette
+179 verbose request no auth needed
+180 info attempt registry request try #1 at 6:54:44 PM
+181 verbose etag W/"99c6a2306ecf3a6eed87ae99cb5c7125"
+182 verbose lastModified Sun, 09 Jan 2022 04:39:00 GMT
+183 http request GET https://registry.npmjs.org/colorette
+184 http 304 https://registry.npmjs.org/colorette
+185 verbose headers { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+185 verbose headers   connection: 'keep-alive',
+185 verbose headers   'cf-ray': '6d5662709d8021f1-MIA',
+185 verbose headers   age: '200',
+185 verbose headers   'cache-control': 'public, max-age=300',
+185 verbose headers   etag: '"99c6a2306ecf3a6eed87ae99cb5c7125"',
+185 verbose headers   'last-modified': 'Sun, 09 Jan 2022 04:39:00 GMT',
+185 verbose headers   vary: 'Accept-Encoding',
+185 verbose headers   'cf-cache-status': 'HIT',
+185 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+185 verbose headers   'x-amz-replication-status': 'COMPLETED',
+185 verbose headers   server: 'cloudflare' }
+186 silly get cb [ 304,
+186 silly get   { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+186 silly get     connection: 'keep-alive',
+186 silly get     'cf-ray': '6d5662709d8021f1-MIA',
+186 silly get     age: '200',
+186 silly get     'cache-control': 'public, max-age=300',
+186 silly get     etag: '"99c6a2306ecf3a6eed87ae99cb5c7125"',
+186 silly get     'last-modified': 'Sun, 09 Jan 2022 04:39:00 GMT',
+186 silly get     vary: 'Accept-Encoding',
+186 silly get     'cf-cache-status': 'HIT',
+186 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+186 silly get     'x-amz-replication-status': 'COMPLETED',
+186 silly get     server: 'cloudflare' } ]
+187 verbose etag https://registry.npmjs.org/colorette from cache
+188 verbose get saving colorette to /home/laura/.npm/registry.npmjs.org/colorette/.cache.json
+189 http 200 https://registry.npmjs.org/rechoir
+190 verbose headers { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+190 verbose headers   'content-type': 'application/json',
+190 verbose headers   'transfer-encoding': 'chunked',
+190 verbose headers   connection: 'keep-alive',
+190 verbose headers   'cf-ray': '6d56627098d567b1-MIA',
+190 verbose headers   age: '256',
+190 verbose headers   'cache-control': 'public, max-age=300',
+190 verbose headers   etag: 'W/"4c2c909aa977e8fc1ff907d24f8cdb73"',
+190 verbose headers   'last-modified': 'Mon, 10 Jan 2022 02:16:19 GMT',
+190 verbose headers   vary: 'accept-encoding, accept',
+190 verbose headers   'cf-cache-status': 'HIT',
+190 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+190 verbose headers   'x-amz-replication-status': 'COMPLETED',
+190 verbose headers   server: 'cloudflare',
+190 verbose headers   'content-encoding': 'gzip' }
+191 silly get cb [ 200,
+191 silly get   { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+191 silly get     'content-type': 'application/json',
+191 silly get     'transfer-encoding': 'chunked',
+191 silly get     connection: 'keep-alive',
+191 silly get     'cf-ray': '6d56627098d567b1-MIA',
+191 silly get     age: '256',
+191 silly get     'cache-control': 'public, max-age=300',
+191 silly get     etag: 'W/"4c2c909aa977e8fc1ff907d24f8cdb73"',
+191 silly get     'last-modified': 'Mon, 10 Jan 2022 02:16:19 GMT',
+191 silly get     vary: 'accept-encoding, accept',
+191 silly get     'cf-cache-status': 'HIT',
+191 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+191 silly get     'x-amz-replication-status': 'COMPLETED',
+191 silly get     server: 'cloudflare',
+191 silly get     'content-encoding': 'gzip' } ]
+192 verbose get saving rechoir to /home/laura/.npm/registry.npmjs.org/rechoir/.cache.json
+193 http 200 https://registry.npmjs.org/fastest-levenshtein
+194 verbose headers { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+194 verbose headers   'content-type': 'application/json',
+194 verbose headers   'transfer-encoding': 'chunked',
+194 verbose headers   connection: 'keep-alive',
+194 verbose headers   'cf-ray': '6d566270996402a0-MIA',
+194 verbose headers   age: '11',
+194 verbose headers   'cache-control': 'public, max-age=300',
+194 verbose headers   etag: 'W/"815b62b375e924551b331b1121a0c305"',
+194 verbose headers   'last-modified': 'Fri, 07 Aug 2020 23:22:10 GMT',
+194 verbose headers   vary: 'accept-encoding, accept',
+194 verbose headers   'cf-cache-status': 'HIT',
+194 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+194 verbose headers   server: 'cloudflare',
+194 verbose headers   'content-encoding': 'gzip' }
+195 silly get cb [ 200,
+195 silly get   { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+195 silly get     'content-type': 'application/json',
+195 silly get     'transfer-encoding': 'chunked',
+195 silly get     connection: 'keep-alive',
+195 silly get     'cf-ray': '6d566270996402a0-MIA',
+195 silly get     age: '11',
+195 silly get     'cache-control': 'public, max-age=300',
+195 silly get     etag: 'W/"815b62b375e924551b331b1121a0c305"',
+195 silly get     'last-modified': 'Fri, 07 Aug 2020 23:22:10 GMT',
+195 silly get     vary: 'accept-encoding, accept',
+195 silly get     'cf-cache-status': 'HIT',
+195 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+195 silly get     server: 'cloudflare',
+195 silly get     'content-encoding': 'gzip' } ]
+196 verbose get saving fastest-levenshtein to /home/laura/.npm/registry.npmjs.org/fastest-levenshtein/.cache.json
+197 http 200 https://registry.npmjs.org/import-local
+198 verbose headers { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+198 verbose headers   'content-type': 'application/json',
+198 verbose headers   'transfer-encoding': 'chunked',
+198 verbose headers   connection: 'keep-alive',
+198 verbose headers   'cf-ray': '6d5662709d3921f9-MIA',
+198 verbose headers   age: '236',
+198 verbose headers   'cache-control': 'public, max-age=300',
+198 verbose headers   etag: 'W/"8b55beacac5b326a5054fbe97d366be0"',
+198 verbose headers   'last-modified': 'Thu, 06 Jan 2022 08:17:23 GMT',
+198 verbose headers   vary: 'accept-encoding, accept',
+198 verbose headers   'cf-cache-status': 'HIT',
+198 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+198 verbose headers   'x-amz-replication-status': 'PENDING',
+198 verbose headers   server: 'cloudflare',
+198 verbose headers   'content-encoding': 'gzip' }
+199 silly get cb [ 200,
+199 silly get   { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+199 silly get     'content-type': 'application/json',
+199 silly get     'transfer-encoding': 'chunked',
+199 silly get     connection: 'keep-alive',
+199 silly get     'cf-ray': '6d5662709d3921f9-MIA',
+199 silly get     age: '236',
+199 silly get     'cache-control': 'public, max-age=300',
+199 silly get     etag: 'W/"8b55beacac5b326a5054fbe97d366be0"',
+199 silly get     'last-modified': 'Thu, 06 Jan 2022 08:17:23 GMT',
+199 silly get     vary: 'accept-encoding, accept',
+199 silly get     'cf-cache-status': 'HIT',
+199 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+199 silly get     'x-amz-replication-status': 'PENDING',
+199 silly get     server: 'cloudflare',
+199 silly get     'content-encoding': 'gzip' } ]
+200 verbose get saving import-local to /home/laura/.npm/registry.npmjs.org/import-local/.cache.json
+201 http 200 https://registry.npmjs.org/interpret
+202 verbose headers { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+202 verbose headers   'content-type': 'application/json',
+202 verbose headers   'transfer-encoding': 'chunked',
+202 verbose headers   connection: 'keep-alive',
+202 verbose headers   'cf-ray': '6d5662709d7f0981-MIA',
+202 verbose headers   age: '258',
+202 verbose headers   'cache-control': 'public, max-age=300',
+202 verbose headers   etag: 'W/"16447f72b7c6995be9061cdf607bd44c"',
+202 verbose headers   'last-modified': 'Sun, 09 Jan 2022 15:25:19 GMT',
+202 verbose headers   vary: 'accept-encoding, accept',
+202 verbose headers   'cf-cache-status': 'HIT',
+202 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+202 verbose headers   'x-amz-replication-status': 'COMPLETED',
+202 verbose headers   server: 'cloudflare',
+202 verbose headers   'content-encoding': 'gzip' }
+203 silly get cb [ 200,
+203 silly get   { date: 'Sat, 29 Jan 2022 23:54:14 GMT',
+203 silly get     'content-type': 'application/json',
+203 silly get     'transfer-encoding': 'chunked',
+203 silly get     connection: 'keep-alive',
+203 silly get     'cf-ray': '6d5662709d7f0981-MIA',
+203 silly get     age: '258',
+203 silly get     'cache-control': 'public, max-age=300',
+203 silly get     etag: 'W/"16447f72b7c6995be9061cdf607bd44c"',
+203 silly get     'last-modified': 'Sun, 09 Jan 2022 15:25:19 GMT',
+203 silly get     vary: 'accept-encoding, accept',
+203 silly get     'cf-cache-status': 'HIT',
+203 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+203 silly get     'x-amz-replication-status': 'COMPLETED',
+203 silly get     server: 'cloudflare',
+203 silly get     'content-encoding': 'gzip' } ]
+204 verbose get saving interpret to /home/laura/.npm/registry.npmjs.org/interpret/.cache.json
+205 verbose stack Error: Missing required argument #1
+205 verbose stack     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+205 verbose stack     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+205 verbose stack     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+205 verbose stack     at /usr/share/npm/lib/install/deps.js:457:7
+205 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+205 verbose stack     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+205 verbose stack     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+205 verbose stack     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+205 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+205 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+206 verbose cwd /home/laura/Personal Projects/Especialization webstack/holbertonschoon-frontend/0x0E-Cookies_local_storage
+207 error Linux 5.4.72-microsoft-standard-WSL2
+208 error argv "/usr/bin/node" "/usr/bin/npm" "i" "-D" "webpack-cli"
+209 error node v8.10.0
+210 error npm  v3.5.2
+211 error code EMISSINGARG
+212 error typeerror Error: Missing required argument #1
+212 error typeerror     at andLogAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:31:3)
+212 error typeerror     at fetchPackageMetadata (/usr/share/npm/lib/fetch-package-metadata.js:51:22)
+212 error typeerror     at resolveWithNewModule (/usr/share/npm/lib/install/deps.js:456:12)
+212 error typeerror     at /usr/share/npm/lib/install/deps.js:457:7
+212 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+212 error typeerror     at /usr/share/npm/lib/fetch-package-metadata.js:37:12
+212 error typeerror     at addRequestedAndFinish (/usr/share/npm/lib/fetch-package-metadata.js:82:5)
+212 error typeerror     at returnAndAddMetadata (/usr/share/npm/lib/fetch-package-metadata.js:117:7)
+212 error typeerror     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:134:20)
+212 error typeerror     at /usr/share/npm/node_modules/iferr/index.js:13:50
+213 error typeerror This is an error with npm itself. Please report this error at:
+213 error typeerror     <http://github.com/npm/npm/issues>
+214 verbose exit [ 1, true ]
